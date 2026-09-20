@@ -1,0 +1,47 @@
+# ----------------------------------------------------------------------
+# FALCO TRAILS SL - Production Enterprise Security Configuration (.htaccess)
+# 100% Security Architecture
+# ----------------------------------------------------------------------
+
+<IfModule mod_headers.c>
+    # 1. Content Security Policy (CSP)
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://wa.me; frame-ancestors 'self';"
+
+    # 2. Prevent Clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # 3. Prevent MIME Sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # 4. Cross-Site Scripting (XSS) Filter
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # 5. Strict Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # 6. Restrict Dangerous Device Features
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+
+    # 7. HTTP Strict Transport Security (HSTS) - 1 Year
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# Block access to hidden files and version control
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Block access to configuration and backup files
+<FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Disable Directory Browsing
+Options -Indexes
+
+# Enable Keep-Alive and GZIP Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>

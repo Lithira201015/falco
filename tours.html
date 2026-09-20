@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Curated Itineraries | Falco Trails SL - Sri Lanka Tour Packages</title>
+  <meta name="description" content="Explore curated Sri Lanka tour itineraries by Falco Trails SL. Knuckles trekking, Yala leopard safaris, Sigiriya heritage, scenic blue rail journeys, and coastal expeditions.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Security CSP Meta Tag -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://wa.me;">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-location">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <span>50/A, Yagodamulla, Kotugoda, Sri Lanka</span>
+      </div>
+      <div class="top-bar-contacts">
+        <a href="tel:+94766452556">(+94) 76 645 2556</a>
+        <a href="tel:+94112294711">(+94) 11 229 4711</a>
+        <a href="https://wa.me/94766452556" target="_blank" rel="noopener noreferrer" class="top-whatsapp-pill">WhatsApp Concierge</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-wrap">
+        <img src="assets/images/logo.png" alt="Falco Trails SL Logo" class="brand-logo-img">
+        <div class="brand-title-badge">
+          <span class="company-name">FALCO TRAILS</span>
+          <span class="company-sub">SRI LANKA</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="tours.html" class="nav-link active">Itineraries</a>
+        <a href="tailor-made.html" class="nav-link">Tailor-Made</a>
+        <a href="day-tours.html" class="nav-link">Day Tours</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tailor-made.html" class="btn-plan-trip">Tailor Your Tour</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <button class="drawer-close">&times;</button>
+    <div style="margin-bottom:1.5rem;"><img src="assets/images/logo.png" alt="Falco Trails" style="height:48px;"></div>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="tours.html">Curated Itineraries</a>
+      <a href="tailor-made.html">Tailor-Made Trip Planner</a>
+      <a href="day-tours.html">Day Tours & Excursions</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- Hero Banner -->
+  <section class="section-padding" style="background: linear-gradient(135deg, var(--dark-surface) 0%, var(--primary-deep) 100%); color: #fff; padding-top: 4rem; padding-bottom: 4rem; text-align: center;">
+    <div class="container">
+      <span class="section-tag" style="background: rgba(212, 175, 55, 0.2); color: var(--accent-gold-light);">Handcrafted Travel Experiences</span>
+      <h1 style="font-family: var(--font-heading); font-size: 3rem; margin: 0.8rem 0 1rem;">Curated Sri Lanka Itineraries</h1>
+      <p style="max-width: 720px; margin: 0 auto; color: rgba(255, 255, 255, 0.9); font-size: 1.1rem;">
+        Each itinerary is meticulously designed by our Kotugoda travel specialists, featuring private chauffeur-guides, scenic train observation cars, boutique stays, and full flexibility.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tours Section -->
+  <section class="section-padding">
+    <div class="container">
+      
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Experiences</button>
+        <button class="filter-btn" data-filter="trekking">⛰️ Trekking & Hiking</button>
+        <button class="filter-btn" data-filter="wildlife">🐆 Wildlife Safaris</button>
+        <button class="filter-btn" data-filter="culture">🏛️ Ancient Heritage</button>
+        <button class="filter-btn" data-filter="luxury">🌊 Scenic & Coastal</button>
+      </div>
+
+      <!-- Tour Cards Grid -->
+      <div id="tour-grid-container" class="tour-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Itinerary Details Modal -->
+  <div id="itinerary-modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="itinerary-modal">
+      <button id="modal-close-button" class="modal-close-btn" aria-label="Close itinerary details">&times;</button>
+      
+      <div class="modal-header-hero">
+        <img id="modal-hero-img" src="assets/images/hero-bg.jpg" alt="Tour Hero" class="modal-header-img">
+        <div class="modal-header-overlay">
+          <h3 id="modal-tour-title" class="modal-tour-title">Tour Title</h3>
+          <div id="modal-tour-meta" class="modal-tour-meta">
+            <span>Duration</span> • <span>Route</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body-content">
+        <h4 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--primary-deep); margin-bottom: 0.8rem;">Day-by-Day Journey Timeline</h4>
+        <div id="modal-timeline-container" class="timeline-track"></div>
+
+        <div class="modal-inclusions-grid">
+          <div class="inclusions-col">
+            <h4 style="color:var(--primary);">✓ Inclusions Included</h4>
+            <ul id="modal-inclusions-list"></ul>
+          </div>
+          <div class="exclusions-col">
+            <h4 style="color:#b53d2d;">✕ Excluded</h4>
+            <ul id="modal-exclusions-list"></ul>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button id="modal-wa-book-btn" class="btn-book-tour-wa">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+            Book via WhatsApp Concierge
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Falco Trails SL" class="footer-logo">
+        <p class="footer-about">Falco Trails SL crafts authentic, tailor-made private tours, mountain treks, and wildlife safaris across Sri Lanka.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Curated Itineraries</a></li>
+          <li><a href="tailor-made.html">Tailor-Made Planner</a></li>
+          <li><a href="day-tours.html">Day Tours</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Kotugoda Base</h4>
+        <div class="footer-contact-item"><span>50/A, Yagodamulla, Kotugoda, Sri Lanka</span></div>
+        <div class="footer-contact-item"><a href="tel:+94766452556">(+94) 76 645 2556</a></div>
+        <div class="footer-contact-item"><a href="tel:+94112294711">(+94) 11 229 4711</a></div>
+      </div>
+      <div>
+        <h4 class="footer-title">100% Security</h4>
+        <p style="font-size:0.85rem; line-height:1.6;">Encrypted communications, CSRF defense, and zero unauthorized trackers.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 FALCO TRAILS SL. Kotugoda, Sri Lanka.</p>
+      <div class="footer-bottom-links">
+        <a href="security-privacy.html">Security Architecture</a>
+        <a href="security-privacy.html#privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/security.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

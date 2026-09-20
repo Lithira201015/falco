@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Tailor-Made Tours | Falco Trails SL - Sri Lanka Custom Holidays</title>
+  <meta name="description" content="Design your personalized private Sri Lanka holiday with Falco Trails SL. Custom itineraries, luxury eco-villas, private chauffeur guides, and 100% secure booking.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Security CSP Meta Tag -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://wa.me;">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-location">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <span>50/A, Yagodamulla, Kotugoda, Sri Lanka</span>
+      </div>
+      <div class="top-bar-contacts">
+        <a href="tel:+94766452556">(+94) 76 645 2556</a>
+        <a href="tel:+94112294711">(+94) 11 229 4711</a>
+        <a href="https://wa.me/94766452556" target="_blank" rel="noopener noreferrer" class="top-whatsapp-pill">WhatsApp Concierge</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-wrap">
+        <img src="assets/images/logo.png" alt="Falco Trails SL Logo" class="brand-logo-img">
+        <div class="brand-title-badge">
+          <span class="company-name">FALCO TRAILS</span>
+          <span class="company-sub">SRI LANKA</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="tours.html" class="nav-link">Itineraries</a>
+        <a href="tailor-made.html" class="nav-link active">Tailor-Made</a>
+        <a href="day-tours.html" class="nav-link">Day Tours</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tailor-made.html" class="btn-plan-trip">Plan My Trip</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <button class="drawer-close">&times;</button>
+    <div style="margin-bottom:1.5rem;"><img src="assets/images/logo.png" alt="Falco Trails" style="height:48px;"></div>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="tours.html">Curated Itineraries</a>
+      <a href="tailor-made.html">Tailor-Made Trip Planner</a>
+      <a href="day-tours.html">Day Tours & Excursions</a>
+      <a href="about.html">Our Story & Ethos</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- Inner Page Hero -->
+  <section class="section-padding" style="background: linear-gradient(135deg, var(--dark-surface) 0%, var(--primary-deep) 100%); color: #fff; padding-top: 4rem; padding-bottom: 4rem; text-align: center;">
+    <div class="container">
+      <span class="section-tag" style="background: rgba(212, 175, 55, 0.2); color: var(--accent-gold-light);">Bespoke Sri Lanka Travel</span>
+      <h1 style="font-family: var(--font-heading); font-size: 3rem; margin: 0.8rem 0 1rem;">Tailor-Made Tour Designer</h1>
+      <p style="max-width: 680px; margin: 0 auto; color: rgba(255, 255, 255, 0.88); font-size: 1.1rem;">
+        Complete our interactive 5-step journey architect. Our local specialists will draft a personalized itinerary within 24 hours.
+      </p>
+    </div>
+  </section>
+
+  <!-- Interactive Step-by-Step Planner Container -->
+  <section class="section-padding" style="background: var(--light-bg);">
+    <div class="container">
+      <form id="falco-tailor-made-form" data-secure="true" class="planner-wrapper">
+        
+        <!-- Progress Bar -->
+        <div class="planner-progress-bar">
+          <div class="planner-progress-fill"></div>
+        </div>
+
+        <!-- Header -->
+        <div class="planner-header">
+          <div class="planner-step-indicator">Step 1 of 5</div>
+          <h2 class="planner-step-title">How long would you like your Sri Lankan journey to be?</h2>
+        </div>
+
+        <!-- Content Steps -->
+        <div class="planner-content">
+
+          <!-- STEP 1: Duration -->
+          <div class="planner-step active" data-step="1">
+            <div class="card-selector-grid">
+              <div class="selection-card" data-group="duration" data-value="1 - 4 Days">
+                <span class="selection-card-icon">⚡</span>
+                <span class="selection-card-title">1 - 4 Days</span>
+                <span class="selection-card-sub">Short Layover & Highlights</span>
+              </div>
+              <div class="selection-card" data-group="duration" data-value="5 - 7 Days">
+                <span class="selection-card-icon">🌄</span>
+                <span class="selection-card-title">5 - 7 Days</span>
+                <span class="selection-card-sub">Essential Trails & Culture</span>
+              </div>
+              <div class="selection-card" data-group="duration" data-value="8 - 11 Days">
+                <span class="selection-card-icon">🐆</span>
+                <span class="selection-card-title">8 - 11 Days</span>
+                <span class="selection-card-sub">Comprehensive Island Odyssey</span>
+              </div>
+              <div class="selection-card" data-group="duration" data-value="12 - 15+ Days">
+                <span class="selection-card-icon">🏝️</span>
+                <span class="selection-card-title">12 - 15+ Days</span>
+                <span class="selection-card-sub">Deep Discovery & Coast</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem; max-width: 420px; margin-left: auto; margin-right: auto;">
+              <label for="planner-dates" style="font-weight:700; font-size:0.85rem; display:block; margin-bottom:0.4rem;">Approximate Arrival Date or Month</label>
+              <input type="text" id="planner-dates" name="travelDates" placeholder="e.g. November 2026 or Any Time" class="finder-input" style="width:100%;">
+            </div>
+          </div>
+
+          <!-- STEP 2: Travelers -->
+          <div class="planner-step" data-step="2">
+            <div class="card-selector-grid">
+              <div class="selection-card" data-group="travelerType" data-value="Couple / Romantic">
+                <span class="selection-card-icon">💑</span>
+                <span class="selection-card-title">Couple / Honeymoon</span>
+                <span class="selection-card-sub">Romantic Boutique Escapes</span>
+              </div>
+              <div class="selection-card" data-group="travelerType" data-value="Family with Children">
+                <span class="selection-card-icon">👨‍👩‍👧‍👦</span>
+                <span class="selection-card-title">Family Holiday</span>
+                <span class="selection-card-sub">Kid-Friendly & Relaxed</span>
+              </div>
+              <div class="selection-card" data-group="travelerType" data-value="Solo Adventurer">
+                <span class="selection-card-icon">🎒</span>
+                <span class="selection-card-title">Solo Explorer</span>
+                <span class="selection-card-sub">Independent & Active</span>
+              </div>
+              <div class="selection-card" data-group="travelerType" data-value="Group of Friends">
+                <span class="selection-card-icon">👥</span>
+                <span class="selection-card-title">Private Group</span>
+                <span class="selection-card-sub">Adventure & Fun</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem; max-width: 420px; margin-left: auto; margin-right: auto;">
+              <label for="planner-guests" style="font-weight:700; font-size:0.85rem; display:block; margin-bottom:0.4rem;">Total Number of Travelers</label>
+              <input type="number" id="planner-guests" name="guests" value="2" min="1" max="50" class="finder-input" style="width:100%;">
+            </div>
+          </div>
+
+          <!-- STEP 3: Interests (Multi-select) -->
+          <div class="planner-step" data-step="3">
+            <p style="text-align:center; margin-bottom:1.5rem; color:var(--text-muted); font-size:0.9rem;">Select all activities that you'd like included in your trail:</p>
+            <div class="card-selector-grid">
+              <div class="selection-card" data-group="interests" data-value="Knuckles & Mountain Trekking" data-multi="true">
+                <span class="selection-card-icon">⛰️</span>
+                <span class="selection-card-title">Highland Trekking</span>
+                <span class="selection-card-sub">Knuckles & Cloud Forests</span>
+              </div>
+              <div class="selection-card" data-group="interests" data-value="Yala Leopard & Elephant Safaris" data-multi="true">
+                <span class="selection-card-icon">🐆</span>
+                <span class="selection-card-title">Wildlife Safaris</span>
+                <span class="selection-card-sub">Yala, Wilpattu, Minneriya</span>
+              </div>
+              <div class="selection-card" data-group="interests" data-value="Sigiriya & Ancient UNESCO Cities" data-multi="true">
+                <span class="selection-card-icon">🏛️</span>
+                <span class="selection-card-title">Cultural Heritage</span>
+                <span class="selection-card-sub">Sigiriya, Kandy, Dambulla</span>
+              </div>
+              <div class="selection-card" data-group="interests" data-value="Iconic Scenic Train Ride" data-multi="true">
+                <span class="selection-card-icon">🚂</span>
+                <span class="selection-card-title">Scenic Blue Train</span>
+                <span class="selection-card-sub">Ella & Tea Estates</span>
+              </div>
+              <div class="selection-card" data-group="interests" data-value="Whale Watching & Southern Beaches" data-multi="true">
+                <span class="selection-card-icon">🐋</span>
+                <span class="selection-card-title">Marine & Beaches</span>
+                <span class="selection-card-sub">Mirissa, Bentota, Galle</span>
+              </div>
+              <div class="selection-card" data-group="interests" data-value="Ayurveda & Wellness Retreat" data-multi="true">
+                <span class="selection-card-icon">🌿</span>
+                <span class="selection-card-title">Ayurveda Wellness</span>
+                <span class="selection-card-sub">Yoga, Herbal Healing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 4: Accommodation Preference -->
+          <div class="planner-step" data-step="4">
+            <div class="card-selector-grid">
+              <div class="selection-card" data-group="accommodation" data-value="Luxury Boutique & Heritage Villas">
+                <span class="selection-card-icon">🏰</span>
+                <span class="selection-card-title">Luxury Boutique</span>
+                <span class="selection-card-sub">Private Heritage Villas</span>
+              </div>
+              <div class="selection-card" data-group="accommodation" data-value="Eco-Lodges & Wilderness Glamping">
+                <span class="selection-card-icon">🏕️</span>
+                <span class="selection-card-title">Eco-Lodges & Glamping</span>
+                <span class="selection-card-sub">Nature immersive luxury</span>
+              </div>
+              <div class="selection-card" data-group="accommodation" data-value="4 & 5 Star Premium Hotels">
+                <span class="selection-card-icon">⭐</span>
+                <span class="selection-card-title">4 & 5 Star Resorts</span>
+                <span class="selection-card-sub">World-class hospitality</span>
+              </div>
+              <div class="selection-card" data-group="accommodation" data-value="Authentic Cozy Homestays & Guesthouses">
+                <span class="selection-card-icon">🏡</span>
+                <span class="selection-card-title">Charming Comfort</span>
+                <span class="selection-card-sub">Authentic & budget-conscious</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 5: Guest Details -->
+          <div class="planner-step" data-step="5">
+            <div style="max-width: 550px; margin: 0 auto;">
+              <div class="planner-form-group">
+                <label for="planner-name">Your Full Name *</label>
+                <input type="text" id="planner-name" name="fullName" required placeholder="e.g. David Miller">
+              </div>
+
+              <div class="planner-form-group">
+                <label for="planner-email">Email Address *</label>
+                <input type="email" id="planner-email" name="email" required placeholder="e.g. david@example.com">
+              </div>
+
+              <div class="planner-form-group">
+                <label for="planner-phone">WhatsApp / Contact Phone (with Country Code) *</label>
+                <input type="tel" id="planner-phone" name="phone" required placeholder="e.g. +44 7911 123456 or +94 766 452 556">
+              </div>
+
+              <div class="planner-form-group">
+                <label for="planner-notes">Any Special Requirements / Must-Sees</label>
+                <textarea id="planner-notes" name="specialNotes" rows="3" placeholder="Tell us if you have dietary preferences, mobility needs, or special milestones..."></textarea>
+              </div>
+
+              <div style="background:var(--primary-soft); padding:1rem; border-radius:var(--radius-sm); font-size:0.82rem; color:var(--primary-deep); display:flex; align-items:center; gap:0.6rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                <span><strong>100% Security Guarantee:</strong> Your information is strictly protected and never shared. Handled directly by Falco Trails SL Concierge in Kotugoda.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Footer Navigation Controls -->
+        <div class="planner-footer">
+          <button type="button" id="planner-btn-prev" class="btn-planner-prev">⭠ Back</button>
+          <button type="button" id="planner-btn-next" class="btn-planner-next">Continue ➔</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Falco Trails SL" class="footer-logo">
+        <p class="footer-about">
+          Falco Trails SL crafts extraordinary bespoke journeys, private chauffeur-led mountain expeditions, and unforgettable Sri Lankan memories.
+        </p>
+      </div>
+      <div>
+        <h4 class="footer-title">Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Curated Itineraries</a></li>
+          <li><a href="day-tours.html">Day Tours</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Kotugoda Base</h4>
+        <div class="footer-contact-item">
+          <span>50/A, Yagodamulla, Kotugoda, Sri Lanka</span>
+        </div>
+        <div class="footer-contact-item">
+          <a href="tel:+94766452556">(+94) 76 645 2556</a>
+        </div>
+        <div class="footer-contact-item">
+          <a href="tel:+94112294711">(+94) 11 229 4711</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Security & Trust</h4>
+        <p style="font-size:0.85rem; line-height:1.6;">All custom inquiries dispatched with cryptographic sanitization and direct WhatsApp/Email routing.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 FALCO TRAILS SL. Kotugoda, Sri Lanka.</p>
+      <div class="footer-bottom-links">
+        <a href="security-privacy.html">Security Architecture</a>
+        <a href="security-privacy.html#privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/security.js"></script>
+  <script src="assets/js/trip-planner.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
